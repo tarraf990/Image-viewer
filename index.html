@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="upload-container">
+  <h2>Upload Images</h2>
+  <label class="upload-label" for="upload-input">Choose Images</label>
+  <input type="file" id="upload-input" class="upload-input" accept="image/*" multiple>
+
+  <div class="image-preview-container">
+    <button id="prev" class="nav-button" disabled>&lt;</button>
+    <div class="image-preview" id="image-preview"></div>
+    <button id="next" class="nav-button" disabled>&gt;</button>
+  </div>
+  <div class="error-message" id="error-message"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
